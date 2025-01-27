@@ -193,15 +193,12 @@ export default function Chat() {
                     li: ({ node, ...props }) => (
                       <li className="mb-1" {...props} />
                     ),
-                    code: ({ node, inline, ...props }) =>
-                      inline ? (
-                        <code className="bg-gray-100 rounded px-1" {...props} />
-                      ) : (
-                        <code
-                          className="block bg-gray-100 rounded p-2 mb-2 overflow-x-auto"
-                          {...props}
-                        />
-                      ),
+                    code: ({ node, ...props }) => (
+                      <code
+                        className="block bg-gray-100 rounded p-2 mb-2 overflow-x-auto"
+                        {...props}
+                      />
+                    ),
                     pre: ({ node, ...props }) => (
                       <pre className="mb-2" {...props} />
                     ),
